@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Dead Redemption 2 — Guía de ruta completa (spoilers)</title>
+<meta name="description" content="Ruta completa de Red Dead Redemption 2 capítulo por capítulo: las 104 misiones principales, las 26 misiones de desconocidos, porcentaje de avance, horas por capítulo y la lista real del 100 %. Guía con spoilers en español.">
+
+<!-- ============================================================
+     TARJETA PARA WHATSAPP / REDES
+     Cambia las tres URLs (og:url, og:image, twitter:image) por las
+     de tu repo. WhatsApp exige direccion ABSOLUTA; las rutas
+     relativas no le sirven. Al reemplazar la imagen, subela con
+     otro nombre de archivo en vez de esperar a que expire el cache.
+     ============================================================ -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Guías del Viejo Oeste">
+<meta property="og:title" content="Red Dead Redemption 2 — Guía de ruta completa">
+<meta property="og:description" content="Los 8 capítulos, las 104 misiones principales, los 26 desconocidos, % de avance y horas. Con spoilers.">
+<meta property="og:url" content="https://TU-USUARIO.github.io/TU-REPO/">
+<meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:secure_url" content="https://TU-USUARIO.github.io/TU-REPO/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Arthur Morgan apuntando un revólver — guía de ruta de Red Dead Redemption 2">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Red Dead Redemption 2 — Guía de ruta completa">
+<meta name="twitter:description" content="Los 8 capítulos, las 104 misiones principales, los 26 desconocidos, % de avance y horas.">
+<meta name="twitter:image" content="https://TU-USUARIO.github.io/TU-REPO/og-image.jpg">
+<link rel="canonical" href="https://TU-USUARIO.github.io/TU-REPO/">
+<meta name="theme-color" content="#16120D">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --tinta:#16120D;
+  --tinta-2:#211B14;
+  --tinta-3:#2C241A;
+  --papel:#E9DCBF;
+  --papel-2:#D6C49C;
+  --papel-tenue:#A2917021;
+  --sepia:#8A7550;
+  --sangre:#9E1B1B;
+  --sangre-viva:#C62828;
+  --oro:#C8952F;
+  --linea:#4A3C2A;
+  --medida:min(1120px, 92vw);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--tinta);
+  color:var(--papel);
+  font-family:'Barlow',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--oro);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--papel)}
+:focus-visible{outline:2px solid var(--oro);outline-offset:3px}
+
+/* ---------- mapa de fondo ---------- */
+#mapa{
+  position:fixed;inset:0;z-index:0;
+  background:url("map-bg.jpg") center center / cover no-repeat;
+  filter:sepia(.35) contrast(.9);
+  opacity:.30;
+}
+#velo{
+  position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(22,18,13,.30), rgba(22,18,13,.88) 70%),
+    linear-gradient(180deg, rgba(22,18,13,.70), rgba(22,18,13,.94));
+}
+#simbolos{position:fixed;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.capa{position:relative;z-index:3}
+
+/* ---------- barra de lectura ---------- */
+.barra{position:fixed;top:0;left:0;right:0;height:3px;background:rgba(74,60,42,.7);z-index:60}
+.barra i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sangre),var(--sangre-viva),var(--oro));transition:width .12s linear}
+
+.contenedor{width:var(--medida);margin:0 auto}
+
+/* ---------- portada ---------- */
+header.portada{min-height:90vh;display:flex;flex-direction:column;justify-content:center;padding:100px 0 64px}
+.sello{font-family:'Rye',serif;font-size:13px;letter-spacing:.06em;color:var(--sepia);margin:0 0 22px}
+h1{
+  font-family:'Rye',serif;font-weight:400;
+  font-size:clamp(34px,7vw,78px);line-height:1;margin:0;
+  color:var(--papel);
+  text-shadow:0 4px 0 rgba(0,0,0,.45), 0 0 60px rgba(158,27,27,.35);
+}
+h1 em{display:block;font-style:normal;color:var(--sangre-viva);font-size:.52em;margin-top:.22em}
+.bajada{font-size:clamp(17px,2.2vw,21px);color:var(--papel-2);max-width:56ch;margin:30px 0 0}
+.aviso{
+  display:inline-flex;align-items:center;gap:10px;margin-top:28px;
+  padding:9px 16px;border:1px solid var(--sangre);background:rgba(158,27,27,.18);
+  font-size:14px;color:#F3C9C0;
+}
+.aviso b{color:#FF9F92;font-weight:600}
+
+.datos{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:1px;background:var(--linea);border:1px solid var(--linea);margin-top:52px}
+.datos div{background:rgba(33,27,20,.94);padding:18px 20px}
+.datos dt{font-size:12.5px;color:var(--sepia);margin:0 0 4px}
+.datos dd{margin:0;font-family:'Rye',serif;font-size:20px;color:var(--oro)}
+
+/* ---------- secciones ---------- */
+section{padding:74px 0;border-top:1px solid var(--linea);background:rgba(22,18,13,.80)}
+h2{font-family:'Rye',serif;font-weight:400;font-size:clamp(23px,3.6vw,34px);margin:0 0 10px;color:var(--papel)}
+h2::before{content:"";display:block;width:52px;height:3px;background:var(--sangre-viva);margin-bottom:20px}
+.intro{color:var(--papel-2);max-width:70ch;margin:0 0 38px}
+h3{font-family:'Rye',serif;font-weight:400;font-size:20px;margin:46px 0 14px;color:var(--oro)}
+
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.ficha{background:rgba(33,27,20,.92);border:1px solid var(--linea);padding:20px 22px}
+.ficha h4{margin:0 0 8px;font-size:17px;font-weight:700}
+.ficha p{margin:0;font-size:14.5px;color:var(--papel-2)}
+
+.nota{border-left:3px solid var(--oro);background:rgba(200,149,47,.09);padding:16px 20px;font-size:15px;color:#E7D3A8;margin:26px 0 0}
+.nota.roja{border-left-color:var(--sangre-viva);background:rgba(158,27,27,.10);color:#F0CBC3}
+
+/* ---------- tablas ---------- */
+.tabla-envoltura{overflow-x:auto;border:1px solid var(--linea);background:rgba(33,27,20,.92)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:540px}
+th,td{padding:11px 15px;text-align:left;border-bottom:1px solid var(--linea);vertical-align:top}
+th{background:rgba(44,36,26,.95);font-weight:700;font-size:13px;color:var(--sepia)}
+tbody tr:last-child td{border-bottom:none}
+td.n{font-family:'Rye',serif;font-size:13px;color:var(--oro);white-space:nowrap}
+td.si{color:#8FCB8F}
+td.no{color:#C99}
+
+/* ---------- leyenda de simbolos ---------- */
+.leyenda{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 30px}
+.leyenda div{display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid rgba(74,60,42,.55);font-size:15px}
+.leyenda b{
+  flex:0 0 30px;height:30px;border-radius:50%;
+  background:#12100C;color:var(--papel);border:1px solid #6B5A3F;
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,'Times New Roman',serif;font-size:15px;line-height:1;
+}
+
+/* ---------- capitulos ---------- */
+.tablero{
+  position:sticky;top:3px;z-index:30;
+  background:rgba(44,36,26,.97);border:1px solid var(--linea);
+  padding:14px 18px;margin-bottom:24px;
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.tablero .cifra{font-family:'Rye',serif;font-size:21px;color:var(--oro)}
+.tablero .riel{flex:1;min-width:130px;height:9px;background:var(--tinta);border:1px solid var(--linea)}
+.tablero .riel i{display:block;height:100%;width:0;background:var(--sangre-viva);transition:width .25s ease}
+.tablero button{font-family:inherit;font-size:13px;background:none;color:var(--papel-2);border:1px solid var(--linea);padding:6px 12px;cursor:pointer}
+.tablero button:hover{color:var(--papel);border-color:var(--sepia)}
+
+.cap{border:1px solid var(--linea);background:rgba(33,27,20,.94);margin-bottom:12px}
+.cap > summary{list-style:none;cursor:pointer;padding:20px 22px;display:grid;grid-template-columns:52px 1fr auto;gap:18px;align-items:center}
+.cap > summary::-webkit-details-marker{display:none}
+.cap > summary:hover,.cap[open] > summary{background:rgba(44,36,26,.95)}
+.cap .idx{font-family:'Rye',serif;font-size:16px;color:var(--sangre-viva);line-height:1.1}
+.cap .tit{font-weight:600;font-size:18px;line-height:1.28}
+.cap .tit small{display:block;font-weight:400;font-size:13.5px;color:var(--sepia);margin-top:2px}
+.cap .meta{text-align:right;font-family:'Rye',serif;font-size:13px;color:var(--oro);white-space:nowrap}
+.cap .meta em{display:block;font-style:normal;font-family:'Barlow',sans-serif;font-size:12.5px;color:var(--sepia);margin-top:5px}
+.cap .cuerpo{padding:2px 22px 24px 92px;border-top:1px solid var(--linea)}
+.cap .cuerpo > p:first-child{margin-top:18px}
+
+ol.misiones{list-style:none;counter-reset:m;padding:0;margin:16px 0 0}
+ol.misiones li{counter-increment:m;display:grid;grid-template-columns:30px 1fr 68px;gap:10px;padding:7px 0;border-bottom:1px solid rgba(74,60,42,.5);font-size:15.5px;align-items:baseline}
+ol.misiones li::before{content:counter(m,decimal-leading-zero);font-family:'Rye',serif;font-size:11.5px;color:var(--sepia)}
+ol.misiones li .t{color:var(--papel)}
+ol.misiones li .d{text-align:right;font-size:13px;color:var(--sepia);white-space:nowrap}
+ol.misiones li .t i{font-style:normal;font-size:12.5px;color:var(--oro);display:block}
+ol.misiones li.op .t{color:var(--papel-2)}
+
+.etiqueta{display:inline-block;font-size:12px;padding:2px 9px;margin:3px 6px 3px 0;border:1px solid var(--linea);color:var(--papel-2)}
+.etiqueta.alerta{border-color:var(--sangre-viva);color:#F0A79C}
+.etiqueta.oro{border-color:var(--oro);color:var(--oro)}
+
+.marca{display:flex;align-items:center;gap:9px;margin-top:22px;font-size:14px;color:var(--papel-2);cursor:pointer;width:max-content}
+.marca input{width:17px;height:17px;accent-color:var(--sangre-viva);cursor:pointer}
+
+footer{padding:56px 0 80px;border-top:1px solid var(--linea);background:rgba(22,18,13,.94);position:relative;z-index:3}
+footer p{font-size:14px;color:var(--sepia);max-width:72ch}
+footer ul{padding-left:18px;font-size:14.5px}
+footer li{margin-bottom:6px}
+
+@media (max-width:680px){
+  body{font-size:16px}
+  .cap > summary{grid-template-columns:38px 1fr;gap:12px;padding:16px}
+  .cap .meta{grid-column:2;text-align:left;margin-top:6px}
+  .cap .meta em{display:inline;margin-left:10px}
+  .cap .cuerpo{padding:2px 16px 20px}
+  ol.misiones li{grid-template-columns:24px 1fr;gap:8px}
+  ol.misiones li .d{grid-column:2;text-align:left;margin-top:2px}
+  section{padding:54px 0}
+  #mapa{opacity:.22}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+  #simbolos{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="barra" aria-hidden="true"><i id="barraAvance"></i></div>
+<div id="mapa" aria-hidden="true"></div>
+<div id="velo" aria-hidden="true"></div>
+<canvas id="simbolos" aria-hidden="true"></canvas>
+
+<div class="capa">
+
+<header class="portada">
+  <div class="contenedor">
+    <p class="sello">1899 · WEST ELIZABETH · NEW HANOVER · LEMOYNE · AMBARINO</p>
+    <h1>Red Dead<br>Redemption II<em>Guía de ruta</em></h1>
+    <p class="bajada">Los ocho capítulos con sus 104 misiones principales, las 26 cadenas de desconocidos y lo que de verdad pide el 100 % del juego. Con porcentaje de avance y horas por tramo.</p>
+
+    <p class="aviso"><b>Spoilers</b> · Se nombran misiones, muertes y el desenlace de Arthur.</p>
+
+    <dl class="datos">
+      <div><dt>Historia principal</dt><dd>40–50 h</dd></div>
+      <div><dt>Con secundarias</dt><dd>~80 h</dd></div>
+      <div><dt>100 % real</dt><dd>150–180 h</dd></div>
+      <div><dt>Capítulos</dt><dd>6 + 2</dd></div>
+      <div><dt>Misiones principales</dt><dd>104</dd></div>
+      <div><dt>Desconocidos</dt><dd>26</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- ============ ANTES DE EMPEZAR ============ -->
+<section id="antes">
+  <div class="contenedor">
+    <h2>Antes de montar</h2>
+    <p class="intro">Cinco decisiones tempranas que cambian el resto de la partida.</p>
+
+    <div class="rejilla">
+      <div class="ficha">
+        <h4>El honor es una sola barra</h4>
+        <p>Sube saludando, dando de comer al caballo, entregando forajidos vivos y pagando recompensas. Baja robando y matando civiles. Afecta precios, diálogos y una escena importante del capítulo 6. Decide pronto de qué lado vas a jugar.</p>
+      </div>
+      <div class="ficha">
+        <h4>Medallas de oro, después</h4>
+        <p>Cada misión se califica en bronce, plata u oro según objetivos ocultos. Puedes repetir cualquier misión principal desde el menú al terminar la historia, así que en la primera vuelta juega tranquilo y deja el oro para el final.</p>
+      </div>
+      <div class="ficha">
+        <h4>Guarma no tiene regreso</h4>
+        <p>El capítulo 5 es una isla cerrada y no puedes volver jamás. Antes de entrar, estudia todos sus animales y recoge sus plantas o el compendio te queda incompleto para siempre.</p>
+      </div>
+      <div class="ficha">
+        <h4>El caballo importa más que el arma</h4>
+        <p>Consigue temprano un caballo de guerra o de carreras y súbele el vínculo al nivel 4. El vínculo se pierde si el caballo muere, así que lleva siempre revividores encima.</p>
+      </div>
+      <div class="ficha">
+        <h4>Capítulos 2 y 3 son tu tiempo libre</h4>
+        <p>Son los más largos y los más abiertos. A partir del 4 la historia aprieta el ritmo y el mundo se siente cada vez menos disponible. Si vas a explorar, hazlo ahí.</p>
+      </div>
+      <div class="ficha">
+        <h4>Nada de los desconocidos es urgente</h4>
+        <p>Las cadenas se desbloquean por capítulo, pero se pueden terminar después. Las únicas realmente sensibles al tiempo son las misiones de honor opcionales dentro de los capítulos 4 y 6.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUÉ ES EL 100 % ============ -->
+<section id="cien">
+  <div class="contenedor">
+    <h2>Qué pide el 100 % de verdad</h2>
+    <p class="intro">Este es el malentendido más caro del juego. El 100 % de Red Dead Redemption 2 no es «todo»: es una lista cerrada con cuotas parciales. Puedes terminarla sin tocar la mitad de los coleccionables.</p>
+
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr><th>Requisito</th><th>Cuota</th><th>De un total de</th></tr></thead>
+        <tbody>
+          <tr><td>Misiones de la historia</td><td class="n">todas</td><td>104</td></tr>
+          <tr><td>Cadenas de desconocidos</td><td class="n">10</td><td>26</td></tr>
+          <tr><td>Retos</td><td class="n">todos</td><td>90 (9 categorías × 10)</td></tr>
+          <tr><td>Compendio: animales estudiados</td><td class="n">parcial</td><td>178 especies</td></tr>
+          <tr><td>Peces legendarios</td><td class="n">parcial</td><td>13</td></tr>
+          <tr><td>Animales legendarios</td><td class="n">parcial</td><td>16</td></tr>
+          <tr><td>Escondites de bandas limpiados</td><td class="n">parcial</td><td>6</td></tr>
+          <tr><td>Robos a diligencias y trenes</td><td class="n">parcial</td><td>libre</td></tr>
+          <tr><td>Juegos de mesa ganados</td><td class="n">parcial</td><td>póker, blackjack, dominó, cinco dedos</td></tr>
+          <tr><td>Actividades con compañeros</td><td class="n">1 por campamento</td><td>los 4 campamentos</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="nota">
+      Llegar al 100 % desbloquea el traje del Forajido Legendario y un talismán, nada más. Lo que sí consume las 150 horas largas es el compendio completo, las 90 pruebas y los 16 animales legendarios, que van muy por encima de esa lista.
+    </div>
+  </div>
+</section>
+
+<!-- ============ RUTA POR CAPÍTULOS ============ -->
+<section id="ruta">
+  <div class="contenedor">
+    <h2>Capítulo por capítulo</h2>
+    <p class="intro">El orden es el de una partida normal. Varias misiones se desbloquean en ramas paralelas, así que puede que las veas aparecer en distinto orden; el capítulo al que pertenecen no cambia. Los minutos son promedios redondeados a los cinco más cercanos, sin contar el trayecto a caballo hasta el punto de inicio.</p>
+
+    <div class="tablero">
+      <span class="cifra" id="cifra">0 %</span>
+      <div class="riel"><i id="riel"></i></div>
+      <span style="font-size:13px;color:var(--papel-2)" id="reloj">0 h de 40–50 h</span>
+      <button type="button" id="reiniciar">Reiniciar</button>
+    </div>
+
+    <!-- CAPÍTULO 1 -->
+    <details class="cap" data-pct="6" data-min="105">
+      <summary>
+        <span class="idx">I</span>
+        <span class="tit">Colter<small>6 misiones · las montañas Grizzly, mayo de 1899</small></span>
+        <span class="meta">6 %<em>1.5 – 2 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>Tutorial disfrazado de tragedia. La banda huye de Blackwater a la nieve y pierde a Davey. No hay mundo abierto todavía: todo pasa alrededor del pueblo minero abandonado.</p>
+        <ol class="misiones">
+          <li><span class="t">Forajidos del oeste</span><span class="d">~20 min</span></li>
+          <li><span class="t">Entra, perseguido por un recuerdo</span><span class="d">~15 min</span></li>
+          <li><span class="t">Las secuelas del Génesis</span><span class="d">~15 min</span></li>
+          <li><span class="t">Viejos amigos</span><span class="d">~15 min</span></li>
+          <li><span class="t">¿Quién demonios es Leviticus Cornwall?</span><span class="d">~25 min</span></li>
+          <li><span class="t">Rumbo al este</span><span class="d">~10 min</span></li>
+        </ol>
+        <p><span class="etiqueta alerta">Muere: Davey Callander</span><span class="etiqueta">Sin mundo abierto</span></p>
+        <p style="font-size:14.5px;color:var(--papel-2);margin-top:16px">Aprovecha que la nieve es un tutorial cerrado para acostumbrarte a la cámara en primera persona y al Dead Eye. Cazar aquí no rinde: casi nada de lo que consigas te sirve después.</p>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- CAPÍTULO 2 -->
+    <details class="cap" data-pct="23" data-min="480">
+      <summary>
+        <span class="idx">II</span>
+        <span class="tit">Horseshoe Overlook<small>18 misiones · Valentine y The Heartlands</small></span>
+        <span class="meta">23 %<em>7 – 9 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>Se abre el mapa entero menos Blackwater y el oeste. Es el capítulo más largo y el que más margen te da para hacer lo que quieras. Todo lo que no hagas aquí lo vas a hacer con prisa después.</p>
+        <ol class="misiones">
+          <li><span class="t">Alta sociedad al estilo Valentine</span><span class="d">~20 min</span></li>
+          <li><span class="t">Americanos en reposo</span><span class="d">~20 min</span></li>
+          <li><span class="t">Sale, perseguido por un ego magullado</span><span class="d">~25 min</span></li>
+          <li><span class="t">Una visita de cortesía</span><span class="d">~20 min</span></li>
+          <li><span class="t">Un rato tranquilo</span><span class="d">~20 min</span></li>
+          <li><span class="t">El que esté libre de pecado</span><span class="d">~15 min</span></li>
+          <li><span class="t">Las espinas de América</span><span class="d">~25 min</span></li>
+          <li><span class="t">Préstamos y otros pecados I<i>cadena de honor opcional, continúa hasta el capítulo 6</i></span><span class="d">~15 min</span></li>
+          <li><span class="t">Bienaventurados los mansos</span><span class="d">~25 min</span></li>
+          <li><span class="t">Los últimos serán los primeros</span><span class="d">~20 min</span></li>
+          <li class="op"><span class="t">Derramando petróleo I – IV<i>cuatro partes cortas de campamento</i></span><span class="d">~10 min c/u</span></li>
+          <li><span class="t">Un pescador de hombres</span><span class="d">~25 min</span></li>
+          <li class="op"><span class="t">Amamos una vez y de verdad I – III<i>la cadena de Mary Linton, opcional</i></span><span class="d">~20 min c/u</span></li>
+          <li><span class="t">Las ovejas y las cabras</span><span class="d">~25 min</span></li>
+          <li><span class="t">Aceite de serpiente bueno y honesto</span><span class="d">~20 min</span></li>
+          <li><span class="t">Una extraña bondad</span><span class="d">~25 min</span></li>
+          <li><span class="t">Una escena pastoral americana</span><span class="d">~30 min</span></li>
+        </ol>
+        <p><span class="etiqueta oro">Se desbloquean 8 desconocidos</span><span class="etiqueta">Se abre el viaje rápido del campamento</span><span class="etiqueta alerta">American Dreams solo aquí</span></p>
+        <p style="font-size:14.5px;color:var(--papel-2);margin-top:16px">Aquí conviene: mejorar el campamento (el kit de provisiones primero), conseguir caballo decente, empezar las cadenas de coleccionables largas — cartas de cigarrillos, huesos de dinosaurio, grabados rupestres — y hacer la primera misión de cazarrecompensas en Valentine, que es la que habilita el resto.</p>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- CAPÍTULO 3 -->
+    <details class="cap" data-pct="39" data-min="420">
+      <summary>
+        <span class="idx">III</span>
+        <span class="tit">Clemens Point<small>17 misiones · Rhodes y Lemoyne</small></span>
+        <span class="meta">39 %<em>6 – 8 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>La banda se muda al sur y Dutch intenta exprimir la enemistad entre los Gray y los Braithwaite. Es el último capítulo donde el mundo abierto todavía se siente tuyo.</p>
+        <ol class="misiones">
+          <li><span class="t">Más preguntas sobre el sufragio femenino</span><span class="d">~20 min</span></li>
+          <li><span class="t">El nuevo sur</span><span class="d">~25 min</span></li>
+          <li><span class="t">Destilación americana</span><span class="d">~25 min</span></li>
+          <li class="op"><span class="t">El curso del amor verdadero I – III<i>cadena opcional de Penelope y Beau</i></span><span class="d">~15 min c/u</span></li>
+          <li><span class="t">Un error honesto</span><span class="d">~20 min</span></li>
+          <li><span class="t">Predicando el perdón a su paso</span><span class="d">~20 min</span></li>
+          <li><span class="t">¿Sodoma? De vuelta a Gomorra</span><span class="d">~30 min</span></li>
+          <li><span class="t">Publicidad, el nuevo arte americano I – II</span><span class="d">~20 min c/u</span></li>
+          <li><span class="t">Magos por deporte</span><span class="d">~20 min</span></li>
+          <li><span class="t">Carne de caballo para cenar</span><span class="d">~25 min</span></li>
+          <li><span class="t">Amigos en lugares muy bajos</span><span class="d">~25 min</span></li>
+          <li><span class="t">Los agradables placeres del tabaco</span><span class="d">~25 min</span></li>
+          <li><span class="t">Bienaventurados los pacificadores</span><span class="d">~20 min</span></li>
+          <li><span class="t">Un paseo corto por un bonito pueblo</span><span class="d">~30 min</span></li>
+          <li><span class="t">Rencillas de sangre, antiguas y modernas</span><span class="d">~35 min</span></li>
+          <li><span class="t">La batalla de Shady Belle</span><span class="d">~25 min</span></li>
+        </ol>
+        <p><span class="etiqueta alerta">Muere: Sean MacGuire</span><span class="etiqueta alerta">Secuestran a Jack</span><span class="etiqueta oro">Se desbloquean 4 desconocidos</span></p>
+        <p style="font-size:14.5px;color:var(--papel-2);margin-top:16px">Kieran regresa al campamento en este capítulo y tiene su petición de objeto. «Rencillas de sangre» es el punto de no retorno del capítulo: cierra Rhodes como base de operaciones.</p>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- CAPÍTULO 4 -->
+    <details class="cap" data-pct="53" data-min="390">
+      <summary>
+        <span class="idx">IV</span>
+        <span class="tit">Saint Denis<small>14 misiones · la ciudad y los pantanos</small></span>
+        <span class="meta">53 %<em>6 – 7 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>El capítulo urbano. La banda se esconde en Shady Belle mientras Dutch busca el golpe que los saque del país. Aquí es donde el plan deja de tener sentido.</p>
+        <ol class="misiones">
+          <li><span class="t">Las alegrías de la civilización</span><span class="d">~20 min</span></li>
+          <li><span class="t">Angelo Bronte, un hombre de honor</span><span class="d">~30 min</span></li>
+          <li class="op"><span class="t">Echa una mano<i>misión de honor opcional, solo en este capítulo</i></span><span class="d">~20 min</span></li>
+          <li class="op"><span class="t">Hermanos y hermanas, todos y cada uno<i>misión de honor opcional</i></span><span class="d">~20 min</span></li>
+          <li class="op"><span class="t">Paternidad y otros sueños<i>misión de honor opcional</i></span><span class="d">~25 min</span></li>
+          <li><span class="t">Préstamos y otros pecados V</span><span class="d">~15 min</span></li>
+          <li><span class="t">La jaula dorada</span><span class="d">~30 min</span></li>
+          <li><span class="t">No, no y tres veces no</span><span class="d">~20 min</span></li>
+          <li><span class="t">Una buena noche de desenfreno</span><span class="d">~25 min</span></li>
+          <li><span class="t">Jinetes, apocalipsis</span><span class="d">~25 min</span></li>
+          <li><span class="t">Placeres urbanos</span><span class="d">~25 min</span></li>
+          <li><span class="t">Padres americanos I – II</span><span class="d">~25 min c/u</span></li>
+          <li><span class="t">Actividades campestres</span><span class="d">~30 min</span></li>
+          <li><span class="t">La venganza es un plato que se come frío</span><span class="d">~25 min</span></li>
+          <li><span class="t">Banca, el viejo arte americano</span><span class="d">~35 min</span></li>
+        </ol>
+        <p><span class="etiqueta alerta">Mueren: Kieran, Hosea y Lenny</span><span class="etiqueta alerta">Punto sin retorno al final</span><span class="etiqueta oro">Se desbloquean 7 desconocidos</span></p>
+        <div class="nota roja">
+          Cierra todo lo que tengas pendiente antes de «Banca, el viejo arte americano». Esa misión te manda directo a Guarma sin escala y no regresas al continente hasta el capítulo 6, con el mundo ya cambiado. «Echa una mano» solo existe en este capítulo y es obligatoria para el logro de misiones de honor.
+        </div>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- CAPÍTULO 5 -->
+    <details class="cap" data-pct="62" data-min="165">
+      <summary>
+        <span class="idx">V</span>
+        <span class="tit">Guarma<small>9 misiones · la isla, sin mundo abierto</small></span>
+        <span class="meta">62 %<em>2.5 – 3 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>Un pasillo tropical de tres horas. No hay exploración libre, no hay campamento, no hay tiendas. Lo único que puedes rescatar de aquí son las entradas del compendio.</p>
+        <ol class="misiones">
+          <li><span class="t">Bienvenido al nuevo mundo</span><span class="d">~20 min</span></li>
+          <li><span class="t">Un déspota amable y benevolente</span><span class="d">~20 min</span></li>
+          <li><span class="t">Salvajismo desatado</span><span class="d">~20 min</span></li>
+          <li><span class="t">La furia del infierno</span><span class="d">~20 min</span></li>
+          <li><span class="t">El paraíso misericordiosamente perdido</span><span class="d">~20 min</span></li>
+          <li><span class="t">Querido tío Tácito</span><span class="d">~15 min</span></li>
+          <li><span class="t">Alegría fugaz</span><span class="d">~15 min</span></li>
+          <li><span class="t">Una bifurcación en el camino</span><span class="d">~20 min</span></li>
+          <li><span class="t">Ícaro y amigos</span><span class="d">~20 min</span></li>
+        </ol>
+        <p><span class="etiqueta alerta">Muere: Molly O'Shea</span><span class="etiqueta alerta">Zona irrepetible</span></p>
+        <div class="nota roja">
+          Estudia con los binoculares cada animal que veas: el guacamayo escarlata, el cardenal rojo, el loro, el mono araña, la tortuga de Sonora, la serpiente boa, el caimán. También recoge caña de azúcar y orquídeas. Si sales de Guarma sin hacerlo, tu compendio queda incompleto de forma permanente y no hay manera legítima de volver.
+        </div>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- CAPÍTULO 6 -->
+    <details class="cap" data-pct="80" data-min="480">
+      <summary>
+        <span class="idx">VI</span>
+        <span class="tit">Beaver Hollow<small>19 misiones · Roanoke Ridge y el final de Arthur</small></span>
+        <span class="meta">80 %<em>7 – 9 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>Vuelves al continente con la banda rota y Arthur enfermo. El capítulo más largo de los de Arthur y el que reparte la mayoría de las misiones de honor opcionales.</p>
+        <ol class="misiones">
+          <li><span class="t">Eso es territorio Murfree</span><span class="d">~25 min</span></li>
+          <li><span class="t">Horas de visita</span><span class="d">~15 min</span></li>
+          <li class="op"><span class="t">No busques la absolución I – II<i>misión de honor opcional</i></span><span class="d">~20 min c/u</span></li>
+          <li class="op"><span class="t">De hombres y ángeles<i>misión de honor opcional</i></span><span class="d">~20 min</span></li>
+          <li class="op"><span class="t">El curso del amor verdadero IV – V<i>cierre de la cadena de Penelope</i></span><span class="d">~15 min c/u</span></li>
+          <li class="op"><span class="t">Préstamos y otros pecados VI – VII<i>cierre de la cadena de Strauss</i></span><span class="d">~15 min c/u</span></li>
+          <li><span class="t">Solo una visita social</span><span class="d">~25 min</span></li>
+          <li><span class="t">La señora Sadie Adler, viuda I – II</span><span class="d">~25 min c/u</span></li>
+          <li><span class="t">Una rabia desatada</span><span class="d">~25 min</span></li>
+          <li><span class="t">Arqueología para principiantes</span><span class="d">~30 min</span></li>
+          <li><span class="t">Las delicias de Van Horn</span><span class="d">~20 min</span></li>
+          <li><span class="t">Adiós, querido amigo</span><span class="d">~25 min</span></li>
+          <li><span class="t">Hijos predilectos</span><span class="d">~30 min</span></li>
+          <li><span class="t">El puente a ninguna parte</span><span class="d">~25 min</span></li>
+          <li><span class="t">Honor entre ladrones</span><span class="d">~25 min</span></li>
+          <li><span class="t">El fino arte de la conversación</span><span class="d">~25 min</span></li>
+          <li><span class="t">El hijo del rey</span><span class="d">~20 min</span></li>
+          <li><span class="t">Mi último chico</span><span class="d">~25 min</span></li>
+          <li><span class="t">Nuestros mejores yo</span><span class="d">~30 min</span></li>
+          <li><span class="t">Red Dead Redemption</span><span class="d">~35 min</span></li>
+        </ol>
+        <p><span class="etiqueta alerta">Mueren: Susan Grimshaw y Arthur</span><span class="etiqueta alerta">Punto sin retorno doble</span><span class="etiqueta oro">Último desconocido: El veterano</span></p>
+        <div class="nota roja">
+          Las dos últimas misiones encadenan sin pausa. Antes de empezar «Nuestros mejores yo», cierra todo lo que quieras hacer como Arthur: la escena final depende de tu nivel de honor, y lo que dejes a medias lo heredará John con menos margen. El dinero de Arthur no se traspasa completo, así que gástalo antes.
+        </div>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- EPÍLOGO 1 -->
+    <details class="cap" data-pct="89" data-min="270">
+      <summary>
+        <span class="idx">EP I</span>
+        <span class="tit">Pronghorn Ranch<small>10 misiones · John Marston, 1907</small></span>
+        <span class="meta">89 %<em>4 – 5 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>Cambio de protagonista y de tono: ocho años después, John trabaja de ranchero bajo nombre falso. Se abre por fin el oeste completo, incluidos Blackwater y Nuevo Austin.</p>
+        <ol class="misiones">
+          <li><span class="t">La rueda</span><span class="d">~25 min</span></li>
+          <li><span class="t">Placeres sencillos</span><span class="d">~20 min</span></li>
+          <li><span class="t">Agricultura para principiantes</span><span class="d">~25 min</span></li>
+          <li><span class="t">Paternidad para principiantes</span><span class="d">~25 min</span></li>
+          <li><span class="t">Viejos hábitos</span><span class="d">~25 min</span></li>
+          <li><span class="t">Paternidad para idiotas</span><span class="d">~25 min</span></li>
+          <li><span class="t">¿Jim Milton cabalga de nuevo?</span><span class="d">~30 min</span></li>
+          <li><span class="t">Maternidad</span><span class="d">~25 min</span></li>
+          <li><span class="t">Empleo remunerado</span><span class="d">~25 min</span></li>
+          <li><span class="t">Las clases terratenientes</span><span class="d">~30 min</span></li>
+        </ol>
+        <p><span class="etiqueta oro">Se abre Blackwater y Nuevo Austin</span><span class="etiqueta">Último desconocido: El infierno americano, apagado</span></p>
+        <p style="font-size:14.5px;color:var(--papel-2);margin-top:16px">Este es el momento de limpiar el mapa. Nuevo Austin estuvo vetado toda la partida y guarda animales legendarios, peces, tumbas y buena parte de los retos que te falten.</p>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <!-- EPÍLOGO 2 -->
+    <details class="cap" data-pct="100" data-min="270">
+      <summary>
+        <span class="idx">EP II</span>
+        <span class="tit">Beecher's Hope<small>11 misiones · construir la casa y cerrar la cuenta</small></span>
+        <span class="meta">100 %<em>4 – 5 h</em></span>
+      </summary>
+      <div class="cuerpo">
+        <p>John compra su rancho y lo levanta tabla por tabla. El cierre enlaza directo con el primer Red Dead Redemption.</p>
+        <ol class="misiones">
+          <li><span class="t">Amistades a puño limpio</span><span class="d">~20 min</span></li>
+          <li><span class="t">Un día honesto de trabajo</span><span class="d">~25 min</span></li>
+          <li><span class="t">Reformas del hogar para principiantes</span><span class="d">~25 min</span></li>
+          <li><span class="t">La caja de herramientas</span><span class="d">~20 min</span></li>
+          <li><span class="t">Una nueva Jerusalén</span><span class="d">~25 min</span></li>
+          <li><span class="t">Un pequeño favor para un viejo amigo</span><span class="d">~25 min</span></li>
+          <li><span class="t">El mal día del tío</span><span class="d">~20 min</span></li>
+          <li><span class="t">La mejor de las mujeres<i>escena, sin jugabilidad</i></span><span class="d">~5 min</span></li>
+          <li><span class="t">Intentarlo de nuevo</span><span class="d">~20 min</span></li>
+          <li><span class="t">Un nuevo futuro imaginado</span><span class="d">~25 min</span></li>
+          <li><span class="t">Veneno americano</span><span class="d">~35 min</span></li>
+        </ol>
+        <p><span class="etiqueta">La deuda de $465 solo se paga por historia</span><span class="etiqueta oro">Créditos</span></p>
+        <p style="font-size:14.5px;color:var(--papel-2);margin-top:16px">Tras los créditos sigues jugando con John en mundo libre, con todo el mapa abierto. Es ahí donde se termina el 100 % y donde conviene repetir misiones para las medallas de oro.</p>
+        <label class="marca"><input type="checkbox"> Capítulo completado</label>
+      </div>
+    </details>
+
+    <div class="nota">
+      El conteo de 104 misiones reparte 6 / 18 / 17 / 14 / 9 / 19 / 10 / 11 por capítulo. Vas a ver cifras de 109 y hasta 110 en otras guías: la diferencia son las misiones de honor opcionales y un par de escenas que algunos conteos separan y otros agrupan. Los porcentajes de esta guía se calculan sobre las 104.
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESCONOCIDOS ============ -->
+<section id="desconocidos">
+  <div class="contenedor">
+    <h2>Los 26 desconocidos</h2>
+    <p class="intro">Aparecen en el mapa como un círculo blanco con signo de interrogación. Se desbloquean por capítulo pero se pueden terminar en cualquier momento posterior, incluso después de los créditos. Solo hacen falta 10 cadenas completas para el trofeo y para el 100 %.</p>
+
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr><th>Cadena</th><th>Desde</th><th>De qué va</th><th>Cuenta</th></tr></thead>
+        <tbody>
+          <tr><td>El más noble de los hombres, y una mujer</td><td class="n">Cap. 2</td><td>Rastrear a cinco pistoleros retirados para el libro de Theodore Levin</td><td class="si">Sí</td></tr>
+          <tr><td>Todo lo que brilla</td><td class="n">Cap. 2</td><td>Comprar el mapa de la banda de Jack Hall y seguirlo hasta los lingotes de oro</td><td class="no">No</td></tr>
+          <tr><td>El olor de la pintura de grasa</td><td class="n">Cap. 2</td><td>Reclutar artistas para el teatro de Saint Denis</td><td class="si">Sí</td></tr>
+          <tr><td>Arcadia para aficionados</td><td class="n">Cap. 2</td><td>Salvar a Albert Mason, fotógrafo de fauna con instinto suicida</td><td class="si">Sí</td></tr>
+          <tr><td>Recaudación de fondos</td><td class="n">Cap. 2</td><td>Donaciones para la iglesia. Desaparece al llegar al capítulo 6</td><td class="no">No</td></tr>
+          <tr><td>Sueños americanos</td><td class="n">Cap. 2</td><td>Los tres cadáveres del asesino en serie y su guarida</td><td class="si">Sí</td></tr>
+          <tr><td>Una buena noche para ello</td><td class="n">Cap. 2</td><td>Los hermanos Nite y su culto nocturno</td><td class="si">Sí</td></tr>
+          <tr><td>Geología para principiantes</td><td class="n">Cap. 2</td><td>Los 10 grabados rupestres para Francis Sinclair</td><td class="si">Sí</td></tr>
+          <tr><td>Una prueba de fe</td><td class="n">Cap. 2</td><td>Los 30 huesos de dinosaurio para Deborah MacGuiness</td><td class="si">Sí</td></tr>
+          <tr><td>Fumar y otras aficiones</td><td class="n">Cap. 2</td><td>Las 144 cartas de cigarrillos. Se pueden comprar, pero comprarlas no siempre cuenta</td><td class="no">No</td></tr>
+          <tr><td>Es británico, por supuesto</td><td class="n">Cap. 3</td><td>Margaret y su colección de animales exóticos</td><td class="si">Sí</td></tr>
+          <tr><td>Un pescador de peces</td><td class="n">Cap. 3</td><td>Los 13 peces legendarios para Jeremy Gill</td><td class="si">Sí</td></tr>
+          <tr><td>Las iniquidades de la historia</td><td class="n">Cap. 3</td><td>El coleccionista de recuerdos de la guerra civil</td><td class="si">Sí</td></tr>
+          <tr><td>Ninguna buena acción</td><td class="n">Cap. 3</td><td>Las cartas del soldado y la viuda</td><td class="si">Sí</td></tr>
+          <tr><td>Ah, hermano</td><td class="n">Cap. 4</td><td>El hermano Dorkins y el milagro de la campana</td><td class="si">Sí</td></tr>
+          <tr><td>Un chico saltarín y brillante</td><td class="n">Cap. 4</td><td>Marko Dragic y su autómata. Da el logro de Inteligencia Artificial</td><td class="si">Sí</td></tr>
+          <tr><td>Las misericordias del conocimiento</td><td class="n">Cap. 4</td><td>El profesor Bell y la silla eléctrica</td><td class="si">Sí</td></tr>
+          <tr><td>El camino del artista</td><td class="n">Cap. 4</td><td>Charles Châtenay, pintor y duelista involuntario</td><td class="si">Sí</td></tr>
+          <tr><td>Los lazos que nos unen</td><td class="n">Cap. 4</td><td>La madre superiora Calderón. Enlaza con la misión de honor «Echa una mano»</td><td class="si">Sí</td></tr>
+          <tr><td>Duquesas y otros animales</td><td class="n">Cap. 4</td><td>Los encargos exóticos de Algernon Wasp: orquídeas y plumas</td><td class="si">Sí</td></tr>
+          <tr><td>Idealismo y pragmatismo para principiantes</td><td class="n">Cap. 4</td><td>Los dos socialistas y su imprenta clandestina</td><td class="si">Sí</td></tr>
+          <tr><td>La sabiduría de los ancianos</td><td class="n">Cap. 5</td><td>Rains Fall y la petición de los Wapiti</td><td class="si">Sí</td></tr>
+          <tr><td>La viuda de Willard's Rest</td><td class="n">Cap. 5</td><td>Charlotte, que no sabe cazar. Desaparece al avanzar el capítulo 6</td><td class="no">No</td></tr>
+          <tr><td>El veterano</td><td class="n">Cap. 6</td><td>Hamish Sinclair, el mejor de todos. Guárdale la última parte a John</td><td class="si">Sí</td></tr>
+          <tr><td>El infierno americano, apagado</td><td class="n">Ep. 1</td><td>El pirómano de Annesburg</td><td class="si">Sí</td></tr>
+          <tr><td>Un golpe de suerte</td><td class="n">Cap. 2</td><td>El mapa de Apuestas Altas, la segunda cadena de tesoros</td><td class="no">No</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="nota">
+      Las cadenas marcadas como que no cuentan igual valen la pena: «Todo lo que brilla» y «Un golpe de suerte» pagan más de mil dólares en lingotes, que es dinero suficiente para dejar de preocuparte por el dinero el resto de la partida.
+    </div>
+  </div>
+</section>
+
+<!-- ============ OTRAS SECUNDARIAS ============ -->
+<section id="otras">
+  <div class="contenedor">
+    <h2>Todo lo demás que hay que hacer</h2>
+    <p class="intro">Fuera de la historia y los desconocidos, el mundo reparte otras siete capas de contenido. Estas son las que de verdad se llevan las horas.</p>
+
+    <div class="rejilla">
+      <div class="ficha">
+        <h4>Retos · 90 en total</h4>
+        <p>Nueve categorías de diez: tirador, caza, herborista, jugador, superviviente, forajido, tesoro, explorador y pescador. Completar una categoría entera da un talismán o un amuleto con efecto permanente. Es el bloque más largo del juego.</p>
+      </div>
+      <div class="ficha">
+        <h4>Compendio · 178 animales</h4>
+        <p>Estudiar, cazar y desollar cada especie. Guarma aparte, lo demás se puede hacer con John. Las pieles perfectas necesitan el arma correcta para cada tamaño de animal.</p>
+      </div>
+      <div class="ficha">
+        <h4>Animales y peces legendarios</h4>
+        <p>16 animales y 13 peces. Sus pieles solo se venden al trampero y al fabricante de amuletos, y no se pierden si te vas: quedan guardadas aunque el caballo muera.</p>
+      </div>
+      <div class="ficha">
+        <h4>Cazarrecompensas</h4>
+        <p>Diez carteles repartidos por las comisarías. La primera, en Valentine, hay que hacerla con Arthur antes del capítulo 5 si quieres que John pueda seguir con el resto.</p>
+      </div>
+      <div class="ficha">
+        <h4>Escondites de bandas · 6</h4>
+        <p>Los Murfree, los O'Driscoll, los Lemoyne Raiders, los Del Lobo, los Skinner y los Laramie. Se repueblan, así que limpiarlos una vez basta para el conteo.</p>
+      </div>
+      <div class="ficha">
+        <h4>Coleccionables sueltos</h4>
+        <p>144 cartas de cigarrillos, 30 huesos de dinosaurio, 10 grabados rupestres, 20 tumbas, 10 puntos de interés, 9 exóticos, 6 cabañas, 4 sueñacaptores y 4 mapas del tesoro.</p>
+      </div>
+      <div class="ficha">
+        <h4>Actividades con compañeros</h4>
+        <p>Una por campamento para el logro. Son las escenas pequeñas que más carácter le dan a la banda: pescar con Javier, beber con Lenny, jugar dominó con Tilly.</p>
+      </div>
+      <div class="ficha">
+        <h4>Peticiones de objetos</h4>
+        <p>Veinte encargos de compañeros, cada uno con su ventana horaria. Varios solo existen en los capítulos 2 y 3, así que es de lo poco que conviene no dejar para después.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEYENDA DEL MAPA ============ -->
+<section id="leyenda">
+  <div class="contenedor">
+    <h2>Leyenda del mapa</h2>
+    <p class="intro">Los símbolos que flotan en el fondo de esta página son los mismos con los que el juego marca los lugares. Esto es lo que significa cada uno.</p>
+
+    <h3>Personajes y misiones</h3>
+    <div class="leyenda">
+      <div><b>◈</b> Tu personaje</div>
+      <div><b>♞</b> Tu caballo o caballo temporal</div>
+      <div><b>⚑</b> Marcador</div>
+      <div><b>✖</b> Punto de ruta</div>
+      <div><b>●</b> Enemigo</div>
+      <div><b>✕</b> Cadáver</div>
+      <div><b>D</b> Misión principal</div>
+      <div><b>?</b> Desconocido</div>
+      <div><b>△</b> Campamento en el descampado</div>
+      <div><b>◬</b> Campamento de la banda</div>
+    </div>
+
+    <h3>Tiendas y servicios</h3>
+    <div class="leyenda">
+      <div><b>✂</b> Barbero</div>
+      <div><b>⚔</b> Carnicero</div>
+      <div><b>✚</b> Doctor</div>
+      <div><b>◍</b> Tienda general</div>
+      <div><b>⌐</b> Armero</div>
+      <div><b>⌂</b> Hotel</div>
+      <div><b>▤</b> Vendedor de periódicos</div>
+      <div><b>✉</b> Oficina de correos</div>
+      <div><b>▥</b> Cantina</div>
+      <div><b>☺</b> Espectáculo de teatro</div>
+    </div>
+
+    <h3>Transporte y pasatiempos</h3>
+    <div class="leyenda">
+      <div><b>⚲</b> Establo</div>
+      <div><b>✥</b> Diligencia</div>
+      <div><b>▦</b> Estación de tren</div>
+      <div><b>❦</b> Sastre</div>
+      <div><b>❋</b> Trampero</div>
+      <div><b>♨</b> Tienda de cebos</div>
+      <div><b>✋</b> Cinco dedos</div>
+      <div><b>☗</b> Póker</div>
+      <div><b>♠</b> Blackjack</div>
+      <div><b>⚀</b> Dominó</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIEMPOS ============ -->
+<section id="tiempos">
+  <div class="contenedor">
+    <h2>Cuánto te va a llevar</h2>
+
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr><th>Forma de jugarlo</th><th>Horas</th><th>Qué incluye</th></tr></thead>
+        <tbody>
+          <tr><td>Solo la historia</td><td class="n">40–50 h</td><td>Las 104 misiones, sin desviarte</td></tr>
+          <tr><td>Historia y algo de mundo</td><td class="n">~80 h</td><td>Los desconocidos, cazarrecompensas y algo de caza</td></tr>
+          <tr><td>100 % de la lista del juego</td><td class="n">100–120 h</td><td>Los 90 retos son la mayor parte del añadido</td></tr>
+          <tr><td>Todo, compendio incluido</td><td class="n">150–180 h</td><td>Las 178 especies, medallas de oro y coleccionables completos</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Reparto por capítulo</h3>
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr><th>Capítulo</th><th>Misiones</th><th>Horas</th><th>Avance acumulado</th></tr></thead>
+        <tbody>
+          <tr><td>I — Colter</td><td class="n">6</td><td class="n">1.5–2 h</td><td class="n">6 %</td></tr>
+          <tr><td>II — Horseshoe Overlook</td><td class="n">18</td><td class="n">7–9 h</td><td class="n">23 %</td></tr>
+          <tr><td>III — Clemens Point</td><td class="n">17</td><td class="n">6–8 h</td><td class="n">39 %</td></tr>
+          <tr><td>IV — Saint Denis</td><td class="n">14</td><td class="n">6–7 h</td><td class="n">53 %</td></tr>
+          <tr><td>V — Guarma</td><td class="n">9</td><td class="n">2.5–3 h</td><td class="n">62 %</td></tr>
+          <tr><td>VI — Beaver Hollow</td><td class="n">19</td><td class="n">7–9 h</td><td class="n">80 %</td></tr>
+          <tr><td>Epílogo I — Pronghorn Ranch</td><td class="n">10</td><td class="n">4–5 h</td><td class="n">89 %</td></tr>
+          <tr><td>Epílogo II — Beecher's Hope</td><td class="n">11</td><td class="n">4–5 h</td><td class="n">100 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <h3 style="margin-top:0">Fuentes</h3>
+    <ul>
+      <li><a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2">Red Dead Wiki — misiones por capítulo y ramas de progresión</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-full-walkthrough-all-story-missions/">PowerPyx — walkthrough de todas las misiones principales</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-stranger-missions-walkthrough/">PowerPyx — misiones de desconocidos</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-100-guide-checklist/">PowerPyx — lista de verificación del 100 %</a></li>
+      <li><a href="https://www.gtabase.com/red-dead-redemption-2/missions/">GTABase — listado de misiones y medallas de oro</a></li>
+      <li><a href="https://reddead.fandom.com/wiki/Strangers">Red Dead Wiki — desconocidos</a></li>
+    </ul>
+    <p style="margin-top:26px">Guía no oficial. Red Dead Redemption es marca de Rockstar Games y Take-Two Interactive. Los tiempos por misión son promedios aproximados y los porcentajes se calculan sobre las 104 misiones principales.</p>
+  </div>
+</footer>
+
+</div><!-- /capa -->
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- barra de lectura ---------- */
+  var barra = document.getElementById('barraAvance');
+  function pintarBarra(){
+    var alto = document.documentElement.scrollHeight - window.innerHeight;
+    barra.style.width = Math.min(100, alto > 0 ? (window.scrollY/alto)*100 : 0) + '%';
+  }
+  window.addEventListener('scroll', pintarBarra, {passive:true});
+  window.addEventListener('resize', pintarBarra);
+  pintarBarra();
+
+  /* ---------- tablero de capítulos ---------- */
+  var caps  = Array.prototype.slice.call(document.querySelectorAll('.cap'));
+  var cifra = document.getElementById('cifra');
+  var riel  = document.getElementById('riel');
+  var reloj = document.getElementById('reloj');
+  var CLAVE = 'rdr2-avance-v1';
+
+  function guardar(e){ try{ localStorage.setItem(CLAVE, JSON.stringify(e)); }catch(x){} }
+  function leer(){ try{ return JSON.parse(localStorage.getItem(CLAVE)) || []; }catch(x){ return []; } }
+
+  function recalcular(){
+    var pct = 0, min = 0, estado = [];
+    caps.forEach(function(cap, i){
+      var c = cap.querySelector('input');
+      estado[i] = c.checked;
+      if (c.checked){
+        pct = Math.max(pct, parseInt(cap.dataset.pct, 10));
+        min += parseInt(cap.dataset.min, 10);
+      }
+    });
+    cifra.textContent = pct + ' %';
+    riel.style.width = pct + '%';
+    var h = Math.floor(min/60), m = min % 60;
+    reloj.textContent = (min === 0 ? '0 h' : h + ' h' + (m ? ' ' + m + ' min' : '')) + ' de 40–50 h';
+    guardar(estado);
+  }
+
+  var previo = leer();
+  caps.forEach(function(cap, i){
+    var c = cap.querySelector('input');
+    if (previo[i]) c.checked = true;
+    c.addEventListener('change', recalcular);
+  });
+  document.getElementById('reiniciar').addEventListener('click', function(){
+    caps.forEach(function(cap){ cap.querySelector('input').checked = false; });
+    recalcular();
+  });
+  recalcular();
+
+  /* ---------- símbolos del mapa flotando ---------- */
+  var reducido = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reducido.matches) return;
+
+  var lienzo = document.getElementById('simbolos');
+  var ctx = lienzo.getContext('2d');
+
+  var GLIFOS = ['✉','✚','♠','♞','⚑','✂','⚔','⌂','?','$','☗','⚀','△','❋','❦','✥','▦','◍','♨','✋','☺','◬'];
+  var marcas = [], ancho = 0, alto = 0, dpr = 1, corriendo = true;
+
+  function nueva(y){
+    var r = 13 + Math.random() * 12;
+    return {
+      x: Math.random() * ancho,
+      y: y === undefined ? alto + r * 2 : y,
+      r: r,
+      vy: 0.10 + Math.random() * 0.26,
+      vx: (Math.random() - 0.5) * 0.14,
+      fase: Math.random() * Math.PI * 2,
+      vel: 0.004 + Math.random() * 0.009,
+      alfa: 0.18 + Math.random() * 0.34,
+      giro: (Math.random() - 0.5) * 0.10,
+      g: GLIFOS[(Math.random() * GLIFOS.length) | 0]
+    };
+  }
+
+  function medir(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    ancho = window.innerWidth;
+    alto  = window.innerHeight;
+    lienzo.width  = Math.floor(ancho * dpr);
+    lienzo.height = Math.floor(alto * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = ancho < 640 ? 12 : (ancho < 1100 ? 20 : 30);
+    marcas = [];
+    for (var i = 0; i < n; i++) marcas.push(nueva(Math.random() * alto));
+  }
+
+  function dibujar(){
+    if (!corriendo) return;
+    ctx.clearRect(0, 0, ancho, alto);
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    for (var i = 0; i < marcas.length; i++){
+      var m = marcas[i];
+      m.y -= m.vy;
+      m.fase += m.vel;
+      m.x += m.vx + Math.sin(m.fase) * 0.16;
+
+      if (m.y < -m.r * 3 || m.x < -60 || m.x > ancho + 60){
+        marcas[i] = nueva();
+        continue;
+      }
+
+      var respiro = 0.78 + Math.sin(m.fase * 1.4) * 0.22;
+      var a = m.alfa * respiro;
+
+      ctx.save();
+      ctx.translate(m.x, m.y);
+      ctx.rotate(Math.sin(m.fase * 0.7) * m.giro);
+
+      ctx.globalAlpha = a;
+      ctx.fillStyle = '#0E0C09';
+      ctx.beginPath();
+      ctx.arc(0, 0, m.r, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.globalAlpha = a * 0.85;
+      ctx.lineWidth = 1.3;
+      ctx.strokeStyle = '#D9C9A3';
+      ctx.stroke();
+
+      ctx.globalAlpha = a * 1.15;
+      ctx.fillStyle = '#E9DCBF';
+      ctx.font = Math.round(m.r * 1.05) + 'px Georgia, "Times New Roman", serif';
+      ctx.fillText(m.g, 0, 1);
+
+      ctx.restore();
+    }
+
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(dibujar);
+  }
+
+  var t;
+  window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(medir, 180); });
+  document.addEventListener('visibilitychange', function(){
+    if (document.hidden){ corriendo = false; }
+    else if (!corriendo){ corriendo = true; requestAnimationFrame(dibujar); }
+  });
+
+  medir();
+  requestAnimationFrame(dibujar);
+})();
+</script>
+</body>
+</html>
