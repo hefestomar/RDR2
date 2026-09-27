@@ -193,6 +193,17 @@ ol.misiones li.op .t{color:var(--papel-2)}
 .marca{display:flex;align-items:center;gap:9px;margin-top:22px;font-size:14px;color:var(--papel-2);cursor:pointer;width:max-content}
 .marca input{width:17px;height:17px;accent-color:var(--sangre-viva);cursor:pointer}
 
+a.mapa{
+  display:inline-block;font-size:12px;padding:2px 9px;margin-left:5px;
+  border:1px solid var(--oro);color:var(--oro);text-decoration:none;white-space:nowrap;
+}
+a.mapa:hover{background:var(--oro);color:var(--tinta)}
+.ficha .cuando{font-size:12.5px;color:var(--oro);margin:0 0 10px}
+ol.pasos{margin:14px 0 0;padding-left:22px}
+ol.pasos li{margin-bottom:11px}
+.cap.tesoro .idx{font-family:'Rye',serif;font-size:19px;color:var(--oro)}
+.cap.tesoro .cuerpo{padding-left:22px}
+@media (max-width:680px){ .cap.tesoro .cuerpo{padding-left:16px} }
 footer{padding:56px 0 80px;border-top:1px solid var(--linea);background:rgba(22,18,13,.72);position:relative;z-index:3}
 footer p{font-size:14px;color:var(--sepia);max-width:72ch}
 footer ul{padding-left:18px;font-size:14.5px}
@@ -378,7 +389,7 @@ footer li{margin-bottom:6px}
           <li><span class="t"><b class="ini">J</b>Las ovejas y las cabras <span class="quien">(John Marston)</span></span><span class="d">~25 min</span></li>
           <li><span class="t"><b class="ini">D</b>Una extraña bondad <span class="quien">(Dutch van der Linde)</span></span><span class="d">~25 min</span></li>
         </ol>
-        <p><span class="etiqueta oro">Se desbloquean 8 desconocidos</span><span class="etiqueta">Se abre el viaje rápido del campamento</span><span class="etiqueta alerta">American Dreams solo aquí</span></p>
+        <p><span class="etiqueta oro">Se desbloquean 8 desconocidos</span><span class="etiqueta">Se abre el viaje rápido del campamento</span><span class="etiqueta oro">Arranca el asesino en serie</span></p>
         <p style="font-size:14.5px;color:var(--papel-2);margin-top:16px">Aquí conviene: mejorar el campamento (el kit de provisiones primero), conseguir caballo decente, empezar las cadenas de coleccionables largas — cartas de cigarrillos, huesos de dinosaurio, grabados rupestres — y hacer la primera misión de cazarrecompensas en Valentine, que es la que habilita el resto.</p>
         <label class="marca"><input type="checkbox"> Capítulo completado</label>
       </div>
@@ -598,7 +609,7 @@ footer li{margin-bottom:6px}
           <tr><td>El olor de la pintura de grasa</td><td class="n">Cap. 2</td><td>Reclutar artistas para el teatro de Saint Denis</td><td class="si">Sí</td></tr>
           <tr><td>Arcadia para aficionados</td><td class="n">Cap. 2</td><td>Salvar a Albert Mason, fotógrafo de fauna con instinto suicida</td><td class="si">Sí</td></tr>
           <tr><td>Recaudación de fondos</td><td class="n">Cap. 2</td><td>Donaciones para la iglesia. Desaparece al llegar al capítulo 6</td><td class="no">No</td></tr>
-          <tr><td>Sueños americanos</td><td class="n">Cap. 2</td><td>Los tres cadáveres del asesino en serie y su guarida</td><td class="si">Sí</td></tr>
+          <tr><td>Sueños americanos</td><td class="n">Cap. 2</td><td>Los tres cadáveres del asesino en serie y su guarida. Sigue disponible en el epílogo — <a href="#secretos">ver detalle</a></td><td class="si">Sí</td></tr>
           <tr><td>Una buena noche para ello</td><td class="n">Cap. 2</td><td>Los hermanos Nite y su culto nocturno</td><td class="si">Sí</td></tr>
           <tr><td>Geología para principiantes</td><td class="n">Cap. 2</td><td>Los 10 grabados rupestres para Francis Sinclair</td><td class="si">Sí</td></tr>
           <tr><td>Una prueba de fe</td><td class="n">Cap. 2</td><td>Los 30 huesos de dinosaurio para Deborah MacGuiness</td><td class="si">Sí</td></tr>
@@ -722,6 +733,261 @@ footer li{margin-bottom:6px}
   </div>
 </section>
 
+<!-- ============ SECRETOS ============ -->
+<section id="secretos">
+  <div class="contenedor">
+    <h2>Curiosidades y secretos del mundo</h2>
+    <p class="intro">Nada de esto sale en el menú de progreso ni cuenta para el 100 %, salvo donde se indica. Son escenas que el juego deja tiradas por el mapa y que solo encuentras si te desvías. La línea en dorado dice desde cuándo existen; casi todas siguen ahí después de los créditos.</p>
+    <div class="rejilla">
+      <div class="ficha">
+        <h4>El asesino en serie</h4>
+        <p class="cuando">Desde el cap. 2, sigue disponible en el epílogo</p>
+        <p>Tres escenas del crimen repartidas por el mapa: un cuerpo desmembrado bajo un puente de tren cerca de Horseshoe Overlook, otro atado a una roca con la frase «Do you see?» pintada al lado, y un tercero más al sur. En cada una hay un trozo de mapa metido en la boca de la cabeza cortada. Junta los tres, ábrelos en la mochila y el mapa completo señala la cabaña del asesino, Edmund Lowry Jr. Hay que bajar al sótano. Es la cadena «Sueños americanos» y cuenta para el 100 %.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-american-dreams-stranger-mission-walkthrough/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>El OVNI de la cabaña</h4>
+        <p class="cuando">Desde el cap. 2, de madrugada</p>
+        <p>Al noreste de Emerald Ranch hay una cabaña abandonada con un círculo de cadáveres en el suelo. Entra una vez de día para activarlo y regresa entre la 1 y las 3 de la mañana: un platillo aparece sobre la cabaña. Hay un segundo avistamiento en la cima del monte Shann, más difícil, solo alrededor de las 2:30 y con cielo despejado.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>Las estatuas extrañas</h4>
+        <p class="cuando">Cualquier momento</p>
+        <p>Una cueva en Roanoke Ridge guarda ocho estatuas de piedra con distinto número de dedos levantados y un botón numerado. En la pared de afuera hay un grabado que da la pista. Resolverlo abre un compartimento con lingotes. No lo pide el 100 %, pero es de los mejores rompecabezas del juego.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>La casa del meteorito</h4>
+        <p class="cuando">Cualquier momento</p>
+        <p>En Roanoke Ridge, al oeste de Annesburg, una casa tiene un agujero perfecto en el techo y otro en el piso: un meteorito la atravesó. Dentro están los dueños muertos y puedes recoger un fragmento para vender.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>El vampiro de Saint Denis</h4>
+        <p class="cuando">Desde el cap. 4</p>
+        <p>Repartidas por los callejones de la ciudad hay marcas de gis con inscripciones en latín. Encuentra las cinco y una sexta pista te lleva a un callejón concreto, donde entre medianoche y las 3 de la mañana aparece una figura junto a un cadáver. Al matarla suelta la Daga Ornamentada.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>La granja de Aberdeen</h4>
+        <p class="cuando">Desde el cap. 2</p>
+        <p>Al sureste de Emerald Ranch, una pareja muy insistente te invita a cenar. Acepta y despiertas desnudo en una zanja, sin dinero. Si regresas puedes recuperar lo tuyo y bastante más. Perder el dinero no rompe nada, pero guarda antes si llevas mucho encima.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>El fantasma de Agnes Dowd</h4>
+        <p class="cuando">Desde el cap. 2, de noche</p>
+        <p>En Bluewater Marsh, entre las 9 de la noche y las 3 de la mañana, aparece la silueta de una mujer que recita un lamento. No se le puede disparar ni tocar. Hay que ir en varias noches distintas para oír el relato completo.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>El bosque petrificado</h4>
+        <p class="cuando">Cualquier momento</p>
+        <p>Un claro en Ambarino, al noreste, donde todos los árboles están convertidos en piedra. No hay recompensa ni misión: es puro paisaje, y uno de los sitios más raros del mapa.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>El hacha vikinga</h4>
+        <p class="cuando">Cualquier momento</p>
+        <p>Una tumba vikinga enterrada en las montañas de Ambarino, cerca de Window Rock. Dentro hay un hacha única que puedes usar como arma cuerpo a cuerpo el resto de la partida.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>Gavin</h4>
+        <p class="cuando">Desde el cap. 2</p>
+        <p>Un inglés desesperado que busca a su amigo Gavin. Aparece en Rhodes, Saint Denis y otros pueblos, y siempre pregunta lo mismo. Rockstar nunca lo resolvió: no hay Gavin que encontrar. Es el chiste largo más conocido del juego.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>Los Night Folk del pantano</h4>
+        <p class="cuando">Desde el cap. 3, de noche</p>
+        <p>El pantano de Bayou Nwa de noche tiene su propia fauna: figuras encapuchadas que te emboscan con cuchillos, cuerdas tendidas entre árboles para tirarte del caballo, y siluetas que solo aparecen en el Ojo del Águila. Ve con escopeta y sin prisa.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+      <div class="ficha">
+        <h4>Encuentros aleatorios</h4>
+        <p class="cuando">Todo el juego</p>
+        <p>Fuera de todo lo anterior, el mundo lanza cerca de un centenar de escenas sueltas: gente mordida por serpientes, carretas volcadas, duelos en la calle, tipos colgados de un árbol, secuestros del clan Murfree, vendedores que te estafan. No aparecen en ninguna lista de progreso y muchas solo salen una vez por partida. Es exactamente lo que pasa cuando ves aves dando vueltas sobre una roca: vale la pena desviarse siempre que algo se vea raro en el horizonte.</p>
+        <p style="margin-top:12px"><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/" target="_blank" rel="noopener">Guía detallada</a></p>
+      </div>
+    </div>
+    <div class="nota">
+      De los secretos de esta sección no encontré una imagen de mapa fiable para cada uno, así que los enlaces llevan a la página que los documenta. En las tres secciones siguientes —animales, peces y tesoros— los enlaces sí abren directo la captura del mapa con el punto marcado.
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANIMALES ============ -->
+<section id="animales">
+  <div class="contenedor">
+    <h2>Los 16 animales legendarios</h2>
+    <p class="intro">Solo hacen falta 5 para el 100 %, pero los 16 son necesarios para cerrar el compendio. Cada uno existe una sola vez: si muere y no lo despellejas, desaparece para siempre de tu partida. Y sí, pueden morir solos, atropellados por un caballo ajeno o matados por otro depredador.</p>
+
+    <h3>Cómo se caza uno</h3>
+    <ol class="pasos">
+      <li>Llega a la zona marcada. Arriba a la izquierda debe salirte el aviso de que entraste en territorio de animal legendario. <strong>Si ese aviso no aparece, el animal tampoco va a aparecer</strong>: monta campamento, duerme, aléjate y regresa.</li>
+      <li>Pulsa los dos sticks a la vez para activar el Ojo del Águila y busca las pistas amarillas. Suelen ser tres grupos, en posiciones aleatorias dentro de la zona.</li>
+      <li>Sigue el rastro hasta el animal, márcalo en Ojo Muerto y váciale el cargador. La calidad del disparo da igual: la piel legendaria siempre sale perfecta, así que puedes usar escopeta sin miedo.</li>
+      <li>Despellejarlo completa por sí solo la entrada del compendio. Si pierdes la piel, se envía automáticamente al trampero.</li>
+    </ol>
+
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr><th>#</th><th>Animal</th><th>Estado</th><th>Zona</th><th>Disponible</th><th>Mapa</th></tr></thead>
+        <tbody>
+          <tr><td class="n">01</td><td>Oso pardo Bharati</td><td>Ambarino</td><td>O&#x27;Creagh&#x27;s Run, Grizzlies Este</td><td>Cap. 2 — Hosea te lleva en «Sale, perseguido por un ego magullado»</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-1.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">02</td><td>Alce</td><td>New Hanover</td><td>Roanoke Ridge, cerca de Brandywine Drop</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-2.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">03</td><td>Castor</td><td>New Hanover</td><td>Elysian Pool, río Kamassa</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-3.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">04</td><td>Jabalí</td><td>Lemoyne</td><td>Bluewater Marsh</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-4.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">05</td><td>Caimán «Bull Gator»</td><td>Lemoyne</td><td>Bayou Nwa, al sur de Lagras</td><td>Cap. 4 en adelante</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-5.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">06</td><td>Zorro</td><td>Lemoyne</td><td>Mattock Pond, Scarlett Meadows</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-6.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">07</td><td>Coyote</td><td>Lemoyne</td><td>Scarlett Meadows, al oeste de Rhodes</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-7.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">08</td><td>Carnero cimarrón</td><td>West Elizabeth</td><td>Cattail Pond, Big Valley</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-8.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">09</td><td>Uapití</td><td>Ambarino</td><td>Cerca de Cairn Lake</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-9.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">10</td><td>Lobo</td><td>Ambarino</td><td>Cotorra Springs</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-10.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">11</td><td>Bisonte blanco</td><td>Ambarino</td><td>Lago Isabella, Grizzlies Oeste</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-11.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">12</td><td>Ciervo</td><td>West Elizabeth</td><td>Big Valley, al norte de Strawberry</td><td>Cap. 2</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-12.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">13</td><td>Bisonte Tatanka</td><td>New Austin</td><td>Hennigan&#x27;s Stead</td><td>Epílogo</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-13.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">14</td><td>Berrendo</td><td>New Austin</td><td>Rio Del Lobo Rock</td><td>Epílogo</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-14.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">15</td><td>Puma</td><td>New Austin</td><td>Gaptooth Ridge</td><td>Epílogo</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animal-location-15.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">16</td><td>Pantera «Giaguaro»</td><td>Lemoyne</td><td>Bolger Blade, al sur de Rhodes</td><td>Tras completar 9 retos de Cazador Maestro</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-panther-location.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:16px;font-size:14.5px;color:var(--papel-2)"><a href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-legendary-animals-map.jpg" target="_blank" rel="noopener">Mapa general que te da Hosea</a> — lo tienes en la mochila, en Documentos › Mapas. Es bonito pero impreciso; los enlaces de la tabla son capturas del mapa del juego con el punto exacto.</p>
+
+    <div class="nota roja">
+      Los tres de New Austin —bisonte Tatanka, berrendo y puma— no existen para Arthur, porque esa región está bloqueada hasta el epílogo. Si vas por el compendio completo, resérvalos para John.
+    </div>
+  </div>
+</section>
+
+<!-- ============ PECES ============ -->
+<section id="peces">
+  <div class="contenedor">
+    <h2>Los 13 peces legendarios</h2>
+    <p class="intro">Forman la cadena «Un pescador de peces», que arranca con Jeremy Gill en el lago Isabella. Cuentan para el 100 % y para el compendio de peces.</p>
+
+    <h3>Lo que necesitas antes de salir</h3>
+    <ol class="pasos">
+      <li>Acepta primero la misión con Jeremy Gill. Sin eso no puedes enviarle nada.</li>
+      <li>Compra los tres <strong>señuelos especiales</strong> en la tienda de cebos del pantano, al este del mapa: de lago, de río y de pantano, $20 cada uno. <a href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-bait-shop-location-zoomed.jpg" target="_blank" rel="noopener">Ver dónde está la tienda</a>. Los señuelos normales no enganchan peces legendarios.</li>
+      <li>No lleves carnada. Los legendarios no le hacen caso.</li>
+      <li>Lanza el señuelo justo en el punto marcado y recoge <em>muy</em> despacio girando el stick derecho. Si no pica en un minuto, da un tirón con R2, pero solo uno: si insistes, espantas al pez.</li>
+      <li>Cada pez hay que <strong>enviarlo por correo</strong> desde cualquier oficina postal. Pescarlo no basta. Los grandes van amarrados al caballo; los chicos se guardan solos en la mochila.</li>
+    </ol>
+
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr><th>#</th><th>Pez</th><th>Señuelo</th><th>Mapa</th></tr></thead>
+        <tbody>
+          <tr><td class="n">01</td><td>Trucha arcoíris</td><td>Río</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-1.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">02</td><td>Perca</td><td>Lago</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-2.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">03</td><td>Lucio almizclero</td><td>Río</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-3.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">04</td><td>Pejelagarto narigudo</td><td>Pantano</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-4.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">05</td><td>Bagre torito</td><td>Río</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-5.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">06</td><td>Esturión de lago</td><td>Río</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-6.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">07</td><td>Pez sol</td><td>Lago</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-7.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">08</td><td>Lucio cadena</td><td>Río</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-8.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">09</td><td>Salmón rojo</td><td>Lago</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-9.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">10</td><td>Lobina de boca chica</td><td>Lago</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-10.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">11</td><td>Perca de roca</td><td>Lago</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-11.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">12</td><td>Lucio de aleta roja</td><td>Lago</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-12.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+          <tr><td class="n">13</td><td>Lobina de boca grande</td><td>Río</td><td><a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-location-13.jpg" target="_blank" rel="noopener">Ver mapa</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:16px;font-size:14.5px;color:var(--papel-2)"><a href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-legendary-fish-map.jpg" target="_blank" rel="noopener">Mapa general de los 13</a> — útil para planear la ruta de una sola vuelta.</p>
+
+    <div class="nota">
+      Existe un decimocuarto, el bagre legendario del Rio Bravo. Solo aparece después de que le hayas enviado los 13 a Jeremy Gill y él te escriba invitándote. Está en New Austin, así que necesitas a John. No cuenta para el 100 %, pero cierra la historia de Gill, que tiene el mejor remate de todas las cadenas de desconocidos.
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESOROS ============ -->
+<section id="tesoros">
+  <div class="contenedor">
+    <h2>Las cuatro cacerías de tesoros</h2>
+    <p class="intro">Todas funcionan igual: un mapa lleva al siguiente y hasta el cuarto punto no hay oro. Con las tres primeras juntas sacas $4,500 en lingotes, que es de lo más rentable del juego y te resuelve la economía de toda la partida. Para el 100 % solo hacen falta tres, porque cuentan dentro del reto de Explorador.</p>
+
+    <details class="cap tesoro">
+      <summary>
+        <span class="idx">$</span>
+        <span class="tit">Banda de Jack Hall<small>Capítulo 2</small></span>
+        <span class="meta">2 lingotes · $1,000</span>
+      </summary>
+      <div class="cuerpo">
+        <p><strong>Dónde empieza.</strong> Máximo, un desconocido cerca de Flatneck Station, te vende el mapa en $10. Si lo rechazas te lo deja en $5. Si lo matas o se va, cualquier perista lo vende. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-jack-hall-1-1.jpg" target="_blank" rel="noopener">Ver punto de inicio</a></p>
+        <ol class="pasos">
+          <li><strong>Mapa 1.</strong> Ladera del cerro Caliban&#x27;s Seat. Sube y busca el sendero que baja por el lado derecho; hay que saltar de una cornisa a otra. El mapa está en una grieta de la pared. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-jack-hall-2-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Mapa 2.</strong> Cotorra Springs, junto a los géiseres. Hay varios montones de piedra puestos en rectángulo: el del centro esconde el mapa. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-jack-hall-3-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Tesoro.</strong> Islote en medio del lago O&#x27;Creagh&#x27;s Run, bajo una piedra pequeña. Dos lingotes de $500 cada uno. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-jack-hall-4-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="cap tesoro">
+      <summary>
+        <span class="idx">$</span>
+        <span class="tit">El sendero venenoso<small>Capítulo 2</small></span>
+        <span class="meta">4 lingotes · $2,000</span>
+      </summary>
+      <div class="cuerpo">
+        <p><strong>Dónde empieza.</strong> No te lo da nadie: el primer mapa está dentro de una caja fuerte bajo una cama en la cabaña de Cairn Lodge, en la zona nevada del noroeste. Ahí también vive uno de los pistoleros de «El más noble de los hombres», así que aprovecha el viaje. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-poisonous-trail-1-1.jpg" target="_blank" rel="noopener">Ver punto de inicio</a></p>
+        <ol class="pasos">
+          <li><strong>Mapa 1.</strong> A media ladera hay un árbol caído en el suelo y otro muerto todavía en pie. El mapa está dentro del que sigue de pie. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-poisonous-trail-2-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Mapa 2.</strong> En lo alto de una colina hay una formación de piedras. En el hueco del centro está el mapa. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-poisonous-trail-3-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Tesoro.</strong> Cueva detrás de la cascada de Elysian Pool. Saca la linterna de la rueda de objetos ANTES de entrar o no ves nada. Al entrar pégate siempre a la derecha y baja por la cornisa; abajo a la derecha hay un túnel estrecho que lleva al laberinto. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-poisonous-trail-4-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="cap tesoro">
+      <summary>
+        <span class="idx">$</span>
+        <span class="tit">Apuestas altas<small>Capítulo 3, tras «El nuevo sur»</small></span>
+        <span class="meta">3 lingotes · $1,500</span>
+      </summary>
+      <div class="cuerpo">
+        <p><strong>Dónde empieza.</strong> Lo trae un buscador de tesoros que aparece como encuentro aleatorio en una de varias zonas posibles. Lacéalo y átalo para que suelte el mapa; también funciona robarlo o incluso solo saludarlo. Si tras tres encuentros no lo consigues, se compra con cualquier perista. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-random-treasure-hunter-search-area.jpg" target="_blank" rel="noopener">Ver punto de inicio</a></p>
+        <ol class="pasos">
+          <li><strong>Mapa 1.</strong> Detrás de la cascada de Cumberland Falls. Se sube por un tronco de madera que está del lado derecho. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-high-stakes-2-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Mapa 2.</strong> Barrow Lagoon. Sube la lomita y busca un tocón partido atorado entre dos rocas. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-high-stakes-3-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Tesoro.</strong> Bacchus Station. Ponte en lo alto del cerro mirando al río y déjate caer de plataforma en plataforma. Tras unas cuantas bajadas aparece el tesoro encajado en una grieta. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-treasure-map-location-high-stakes-4-solution.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="cap tesoro">
+      <summary>
+        <span class="idx">$</span>
+        <span class="tit">Mapa roto (Mapa remendado)<small>Las dos mitades desde el cap. 2; el tesoro solo en el epílogo</small></span>
+        <span class="meta">Revólver de Otis Miller</span>
+      </summary>
+      <div class="cuerpo">
+        <p><strong>Dónde empieza.</strong> Son dos mitades sueltas que nadie te entrega. Al juntarlas se convierten en el Mapa Remendado.</p>
+        <ol class="pasos">
+          <li><strong>Mitad 1.</strong> Extremo oeste del mapa, en el nacimiento del Little Creek River, dentro de un cajón de una cabaña de madera. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-torn-treasure-map-location-1-1.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Mitad 2.</strong> Esquina noreste, dentro de un cajón de la casa llamada Manito Glade. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-torn-treasure-map-location-2-1.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+          <li><strong>Tesoro.</strong> New Austin, al oeste de Twin Rocks, dentro de una cueva diminuta. No hay dinero, pero el revólver cuenta para el 100 %. <a class="mapa" href="https://www.powerpyx.com/wp-content/uploads/red-dead-redemption-2-mended-treasure-map-location-3-1.jpg" target="_blank" rel="noopener">Ver mapa</a></li>
+        </ol>
+      </div>
+    </details>
+
+    <div class="nota">
+      Hay una quinta, «Le Trésor des Morts», con 5 lingotes, pero solo existe si reservaste la edición digital o tienes la especial o la definitiva. Si la tienes, puedes saltarte cualquiera de las otras.
+    </div>
+
+    <div class="nota roja">
+      Los mapas no son imprescindibles: si ya sabes dónde está el tesoro puedes ir directo y desenterrarlo. Lo que sí conviene es leer cada mapa apenas lo recojas. En el caso del mapa de Chick, dentro de «Préstamos y otros pecados», él llega antes que tú al árbol si te tardas y pierdes el tesoro.
+    </div>
+  </div>
+</section>
+
 <!-- ============ TIEMPOS ============ -->
 <section id="tiempos">
   <div class="contenedor">
@@ -768,6 +1034,11 @@ footer li{margin-bottom:6px}
       <li><a href="https://www.powerpyx.com/red-dead-redemption-2-100-guide-checklist/">PowerPyx — lista de verificación del 100 %</a></li>
       <li><a href="https://www.gtabase.com/red-dead-redemption-2/missions/">GTABase — listado de misiones y medallas de oro</a></li>
       <li><a href="https://reddead.fandom.com/wiki/Strangers">Red Dead Wiki — desconocidos</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-legendary-animals-locations/">PowerPyx — animales legendarios, con mapas</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-all-legendary-fish-locations/">PowerPyx — peces legendarios, con mapas</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-treasure-map-locations-solutions/">PowerPyx — mapas del tesoro y soluciones</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-secrets-easter-eggs/">PowerPyx — secretos y huevos de pascua</a></li>
+      <li><a href="https://www.powerpyx.com/red-dead-redemption-2-american-dreams-stranger-mission-walkthrough/">PowerPyx — «Sueños americanos», el asesino en serie</a></li>
     </ul>
     <p style="margin-top:26px">Guía no oficial. Red Dead Redemption es marca de Rockstar Games y Take-Two Interactive. Los tiempos por misión son promedios aproximados y los porcentajes se calculan sobre las 104 misiones principales.</p>
   </div>
@@ -790,7 +1061,7 @@ footer li{margin-bottom:6px}
   pintarBarra();
 
   /* ---------- tablero de capítulos ---------- */
-  var caps  = Array.prototype.slice.call(document.querySelectorAll('.cap'));
+  var caps  = Array.prototype.slice.call(document.querySelectorAll('.cap[data-pct]'));
   var cifra = document.getElementById('cifra');
   var riel  = document.getElementById('riel');
   var reloj = document.getElementById('reloj');
